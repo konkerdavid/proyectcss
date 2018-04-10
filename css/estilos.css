@@ -1,0 +1,253 @@
+header {
+    background-color: #5b7989;
+  	border-radius: 10px 10px 0 0;
+    padding: 3px 10px;
+}
+header h1{
+  padding-left: 10px;
+  color: white;
+  text-shadow: 1px 2px #02010a;
+  float:left;
+  margin: 10px 5px ;
+}
+nav li {
+   float: right;
+   display: block;
+   margin: 10px 5px ;
+   margin-bottom:  20px;
+   padding: 0px ;
+   height: 100%;
+   color: white;
+   text-align: center;
+}
+body{
+  background-color: black;
+  width: 90%;
+	margin-left: 5%;
+  font-family: 'DancingScript-Regular';
+  animation: slide 2s ;
+}
+
+ul{
+  list-style-type: none;
+  margin: 0;
+  overflow: hidden;
+  height: 100%;
+  padding-left: 1px;
+}
+@font-face {
+  font-family: 'DancingScript-Regular';
+  src: url('DancingScript-Regular.otf');
+}
+#central
+{
+	box-sizing: border-box;
+	background-color: #82c3a6;
+	text-align: center;
+	height: auto;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+#central img{
+  margin-top: 2%;
+  max-height: 90%;
+  width: 80%;
+  box-shadow: 2px 2px black;
+}
+div [class*="bloque"]{
+  min-height: auto;
+}
+.bloque1 {
+  color: #ddd;
+  background-color: #d5c75f;
+  order: 1;
+  border: 1px;
+  flex: 2 2 45%;
+}
+.bloque2 {
+  color: #333;
+  background-color: #d5c75f;
+  order: 2;
+  border: 1px;
+  flex: 2 2 40%;
+}
+.bloque3 {
+  color: #333;
+  background-color: #d5c75f;
+  order: 1;
+  border: 1px;
+  flex:  33.3%;
+  padding-bottom: 20px;
+}
+.bloque4 {
+  color: #333;
+  background-color: #d5c75f;
+  order: 2;
+  border: 1px;
+  flex:  33.3%;
+  padding-bottom: 20px;
+}
+.bloque5 {
+  color: #333;
+  background-color: #d5c75f;
+  order: 3;
+  border: 1px;
+  flex:  33.3%;
+  padding-bottom: 20px;
+}
+
+.bloque6 {
+  color: #333;
+  background-color: #d5c75f;
+  order: 4;
+  border: 1px;
+  flex:  33.3%;
+  padding-bottom: 20px;
+}
+
+.bloque7 {
+  color: #333;
+  background-color: #d5c75f;
+  order: 5;
+  border: 1px;
+  flex:  33.3%;
+  padding-bottom: 20px;
+}
+
+.bloque8 {
+  color: #333;
+  background-color: #d5c75f;
+  order: 6;
+  border: 1px;
+  flex:  33.3%;
+  padding-bottom: 20px;
+}
+.contenedor{
+  display: flex;
+  flex-flow: row wrap;
+  text-transform:inherit;
+}
+.contenedor img {
+  box-shadow: 2px 2px black;
+}
+.bloque1 img:hover{
+  box-shadow: 2px 2px #82c3a6;
+  animation: rotate 2s infinite linear;
+}
+@keyframes rotate {
+  0%
+  {
+    transform: rotatez(10deg);
+  }
+}
+.bloque2 img:hover{
+  animation: mianimacion 3s infinite;
+  box-shadow: 2px 2px #82c3a6;
+}
+@-webkit-keyframes mianimacion{
+  15%
+{
+-webkit-transform: translate(20px,-5px);
+transform: translate(20px,-5px);
+}
+
+}
+.contenedor img {
+   width: 70%;
+   margin-left: 15%;
+   margin-top: 2.5%;
+ }
+ .contenedor h1{
+   color: black;
+   text-align: center;
+   text-decoration:underline;
+   border: none;
+ }
+ footer{
+    background-color: #C6d5c5;
+  	border-radius:  0 0 10px 10px;
+    padding: 23px 10px;
+
+    -webkit-column-count:4;
+    -moz-column-count:4;
+    column-count:4;
+    -moz-column-gap: 3em;
+	  -webkit-column-gap: 3em;
+	   column-gap: 3em;
+     -moz-column-width: 140px;
+	  -webkit-column-width: 140px;
+	  column-width: 140px;
+}
+footer p  img {
+  float: left;
+  width: 10%;
+}
+.contacto h3{
+  margin-top: 2px;
+}
+.terminos h3{
+  margin-bottom:  20px;
+  margin-top: 10px;
+}
+.imagen img{
+  width: 14px;
+}
+@media only screen and (max-width: 480px){
+  .bloque1 , .bloque2,.bloque3 , .bloque4,
+  .bloque5 , .bloque5,.bloque7 , .bloque8
+{
+	flex: 2 2 100%;
+	min-height: 150px;
+	}
+}
+.contacto, .redes, .terminos,.derechos{
+   min-height: 130px;
+}
+nav{
+  text-align: center;
+}
+@media only screen and (max-width: 480px){
+  ul{
+    width:100%
+  }
+  nav li{
+   width: 29%;
+  }
+  .contenido{
+    width: 100%;
+  }
+  footer{
+    padding-left: 40px;
+  }
+@media only screen and (min-width: 900px){
+    .contenido{
+      width: 900px;
+    }
+  }
+}
+figcaption{
+  color: white;
+}
+.blur {
+  -webkit-filter:blur(30px);
+  filter:blur(30px);
+}
+.grayscale {
+  -webkit-filter:grayscale(100%);
+  filter:grayscale(100%);
+}
+.sepia {
+  -webkit-filter:sepia(90%);
+  filter:sepia(90%);
+}
+@-webkit-keyframes slide{
+  from{
+    margin-top:150%;
+  }
+  to{
+    margin-top:-5%;
+  }
+  to{
+    margin-top: 0%;
+}
+}
